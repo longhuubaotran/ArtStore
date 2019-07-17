@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.longtran.artstoremanager">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SaleReportActivity"
+            android:parentActivityName=".AdminActivity"></activity>
+        <activity android:name=".ManageOrderActivity"
+            android:parentActivityName=".AdminActivity"/>
+        <activity
+            android:name=".LowInStockActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".EditDeleteActivity"
+            android:parentActivityName=".ManageProductActivity" />
+        <activity
+            android:name=".ManageProductActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity
+            android:name=".AddProductActivity"
+            android:parentActivityName=".ManageProductActivity" />
+        <activity
+            android:name=".AdminActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LogInActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OrderSuccessActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".OrderDetailActivity" />
+        <activity android:name=".CustomerActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

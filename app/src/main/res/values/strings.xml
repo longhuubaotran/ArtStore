@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ArtStoreManager</string>
+    <string name="productsList">Products List</string>
+    <string name="addToCart">Add to cart</string>
+    <string name="callForMoreinformation">Call for more information</string>
+    <string name="favorite">Favorite</string>
+    <string name="cart">Cart</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="next">Next</string>
+    <string name="itemAlreadyInCart">This item is already in cart</string>
+    <string name="addedToCart">Added to Cart</string>
+    <string name="cantExceedInStock">Quantity cannot exceed in stock</string>
+    <string name="description">Description:</string>
+    <string name="price">Price:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

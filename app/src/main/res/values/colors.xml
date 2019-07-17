@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19AFEF</color>
+    <color name="colorPrimaryDark">#27A6DC</color>
+    <color name="colorAccent">#5C6C73</color>
+    <color name="blue">#3498DB </color>
+    <color name="green">#7DCEA0</color>
+    <color name="description">#333333</color>
+    <color name="price">#8c8c8c</color>
+    <color name="order_success">#C708E8</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lighgrayline">#ededed</color>
+    <color name="lightblue">#AED6F1</color>
+    <color name="greenbackgorund">#48C9B0</color>
+    <color name="meterialgreen">#00bfa5</color>
+    <color name="lightgreen">#ABEBC6</color>
+    <color name="orange">#FAD7A0</color>
+</resources>

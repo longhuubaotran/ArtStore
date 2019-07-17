@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    android:id="@+id/card_view_item_in_order_detail">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/image_product"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/description_text"
+          android:layout_toRightOf="@+id/image_product"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price_text"
+            android:layout_toRightOf="@id/image_product"
+            android:layout_below="@id/description_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity_info"
+            android:text="Quantity: "
+            android:layout_below="@id/price_text"
+            android:layout_toRightOf="@id/image_product"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantity_text"
+            android:layout_toRightOf="@+id/quantity_info"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/price_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_price_info"
+            android:text="Total price: "
+            android:layout_toRightOf="@id/image_product"
+            android:layout_below="@id/quantity_info"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_price_each_item"
+            android:layout_toRightOf="@+id/total_price_info"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/quantity_text"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

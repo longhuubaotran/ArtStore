@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    tools:context=".OrderDetailActivity">
+
+    <include
+        android:id="@+id/toolbar_cart"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/order_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_cart"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Order Summary"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:id="@+id/first_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_summary"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/last_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_name_textView"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phone_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_name_textView"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_before_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Here is the list of your item: "
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_before_scrollview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/child_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_item_in_order_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/total_price_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/child_point"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancel_order_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:drawableLeft="@drawable/delete"
+        android:background="@drawable/button"
+        android:text=" Order" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/cancel_order_btn"
+        android:background="@drawable/button"
+        android:drawableRight="@drawable/next"
+        android:text="Next" />
+</RelativeLayout>
